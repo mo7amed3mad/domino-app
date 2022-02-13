@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+
+
+</head>
+<body style="background-image: url('a.jpg');background-repeat: no-repeat;background-size: 100% 130%;";>
+    
+
+<br>
+
+<img src="s.png" width="80" height="130" style="display: inline-block; margin-right: 20px;">
+<img src="s.png" width="80" height="130" style="display: inline-block">
+
+<br>
+
+
+
+<hr></hr>
+
+<!--<input type="text" name="u1" style="width: 220px; height: 25px">-->
+<input list="player1" name="domino" style="width: 220px; height: 25px" />
+<datalist id="player1">
+    <select>
+  <option value="M_emad">
+  <option value="EL deeb">
+  <option value="Mody ">
+  <option value="Eslam">
+  <option value="shaban">
+  <option value="Ahmed">
+  <option value="Mohamed">
+</select>
+</datalist>
+
+<button style="background:red;cursor:pointer;;color:white;background-color:black" class="counter-minus">-</button>
+<p style="display: inline-block;" class="counter-display">(..)</p>
+<button style="background:red;cursor:pointer;color:white;background-color:black" class="counter-plus">+</button>
+
+
+
+<script>
+let counterDisplayElem = document.querySelector('.counter-display');
+let counterMinusElem = document.querySelector('.counter-minus');
+let counterPlusElem = document.querySelector('.counter-plus');
+
+
+let count = 0;
+
+updateDisplay();
+
+counterPlusElem.addEventListener("click",()=>{
+    count++;
+    updateDisplay();
+}) ;
+
+counterMinusElem.addEventListener("click",()=>{
+    count--;
+    updateDisplay();
+});
+
+function updateDisplay(){
+    counterDisplayElem.innerHTML = count;
+};
+
+</script>
+
+<hr></hr>
+
+<!--<input type="text" name="u1" style="width: 220px; height: 25px">-->
+<input list="player2" name="domino" style="width: 220px; height: 25px" />
+<datalist id="player2">
+  <option value="M_emad">
+  <option value="EL deeb">
+  <option value="Mody ">
+  <option value="Eslam">
+  <option value="shaban">
+  <option value="Ahmed">
+  <option value="Mohamed">
+
+</datalist>
+<button style="background:red;cursor:pointer;color:white;background-color:black" class="counter-minus1">-</button>
+<p style="display: inline-block;" class="counter-display1">(..)</p>
+<button style="background:red;cursor:pointer;color:white;background-color:black" class="counter-plus1">+</button>
+
+
+
+<script>
+let counterDisplayElem1 = document.querySelector('.counter-display1');
+let counterMinusElem1 = document.querySelector('.counter-minus1');
+let counterPlusElem1 = document.querySelector('.counter-plus1');
+
+let count1 = 0;
+
+updateDisplay1();
+
+counterPlusElem1.addEventListener("click",()=>{
+    count1++;
+    updateDisplay1();
+}) ;
+
+counterMinusElem1.addEventListener("click",()=>{
+    count1--;
+    updateDisplay1();
+});
+
+function updateDisplay1(){
+    counterDisplayElem1.innerHTML = count1;
+};
+</script>
+
+<hr></hr>
+
+<!--<input type="text" name="u1" style="width: 220px; height: 25px">-->
+<input list="player3" name="domino" style="width: 220px; height: 25px" />
+<datalist id="player3">
+  <option value="M_emad">
+  <option value="EL deeb">
+  <option value="Mody ">
+  <option value="Eslam">
+  <option value="shaban">
+  <option value="Ahmed">
+  <option value="Mohamed">
+
+</datalist>
+<button style="background:red;cursor:pointer;color:white;background-color:black" class="counter-minus2"> - </button>
+<p style="display: inline-block;" class="counter-display2">(..)</p>
+<button style="background:red;cursor:pointer;color:white;background-color:black" class="counter-plus2">+</button>
+
+
+
+<script>
+let counterDisplayElem2 = document.querySelector('.counter-display2');
+let counterMinusElem2 = document.querySelector('.counter-minus2');
+let counterPlusElem2 = document.querySelector('.counter-plus2');
+
+let count2 = 0;
+
+updateDisplay2();
+
+counterPlusElem2.addEventListener("click",()=>{
+    count2++;
+    updateDisplay2();
+}) ;
+
+counterMinusElem2.addEventListener("click",()=>{
+    count2--;
+    updateDisplay2();
+});
+
+function updateDisplay2(){
+    counterDisplayElem2.innerHTML = count2;
+};
+</script>
+
+<hr></hr>
+
+<!--<input type="text" name="u1" style="width: 220px; height: 25px">-->
+<input list="player4" name="domino" style="width: 220px; height: 25px" />
+<datalist id="player4">
+  <option value="M_emad">
+  <option value="EL deeb">
+  <option value="Mody ">
+  <option value="Eslam">
+  <option value="shaban">
+  <option value="Ahmed">
+  <option value="Mohamed">
+
+</datalist>
+<button style="background:red;cursor:pointer;color:white;background-color:black" class="counter-minus3">-</button>
+<p style="display: inline-block;" class="counter-display3">(..)</p>
+<button style="background:red;cursor:pointer;color:white;background-color:black" class="counter-plus3">+</button>
+
+
+
+
+<script>
+let counterDisplayElem3 = document.querySelector('.counter-display3');
+let counterMinusElem3 = document.querySelector('.counter-minus3');
+let counterPlusElem3 = document.querySelector('.counter-plus3');
+
+let count3 = 0;
+
+updateDisplay3();
+
+counterPlusElem3.addEventListener("click",()=>{
+    count3++;
+    updateDisplay3();
+}) ;
+
+counterMinusElem3.addEventListener("click",()=>{
+    count3--;
+    updateDisplay3();
+});
+
+function updateDisplay3(){
+    counterDisplayElem3.innerHTML = count3;
+};
+</script>
+
+
+<hr></hr>
+
+
+
+<button style="background:red;cursor:pointer;padding: 10px;margin-left:0px; font-size:14px" onClick="window.location.reload();">Refresh Page</button>
+
+
+<img src="asd.png" width="80" height="130" style="display: inline-block">
+
+<br>
+<br>
+<br>
+
+<p align="center">&copy; 2022 mohamed_emad</p>
+<select name="cars" id="cars">
+    <option value="M_emad">
+    <option value="EL deeb">
+    <option value="Mody ">
+    <option value="Eslam">
+    <option value="shaban">
+    <option value="Ahmed">
+    <option value="Mohamed">
+  </select>
+
+</body>
+
+</html>
